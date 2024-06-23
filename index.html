@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Video Site</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div id="header">
@@ -11,18 +12,8 @@
         <a href="upload.html">Upload de Vídeo</a>
     </div>
     <div id="content">
-        <?php
-        include 'config.php';
-        $stmt = $pdo->query("SELECT * FROM videos ORDER BY upload_date DESC");
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            echo '<div class="video">';
-            echo '<a href="video.html?id=' . $row['id'] . '">';
-            echo '<h3>' . $row['title'] . '</h3>';
-            echo '<p>' . $row['description'] . '</p>';
-            echo '</a>';
-            echo '</div>';
-        }
-        ?>
+        <div id="video-list"></div>
     </div>
 </body>
 </html>
+
