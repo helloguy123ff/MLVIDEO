@@ -1,1 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#header a {
+    margin-left: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    padding: 20px;
+}
+
+.video {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.video h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.video h3:hover {
+    text-decoration: underline;
+}
+
+.video p {
+    margin: 5px 0;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
 
