@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de Vídeo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Upload de Vídeo</h1>
+        <a href="index.html">Voltar para a página inicial</a>
+    </div>
+    <div id="content">
+        <form id="upload-form">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="video">Selecione um vídeo:</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
